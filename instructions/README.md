@@ -92,6 +92,14 @@ Now that we have established that SQL Injection is possible, let's start explori
 * Each of the above is an SQL Injection payload. Copy each payload and inject them in the search parameter by pasting the payload in the search field in the top right corner. Click the search button to execute the payload
 * Observe the results
 
+### Vulnerable Code - SQL Injection
+* Open Terminal
+* Command: `/home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `mousepad controllers/project.controller.js`
+* Mousepad opens up
+	* goto line 125 and look at the vulnerable SQL call
+
+
 ## Cross-Site Scripting - Persistent
 ## Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
@@ -176,6 +184,14 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 	* `{{ config.items() }}`
 	* `{{''.__class__.mro()[1].__subclasses__()[40]('/etc/passwd').read()}}`
 
+### Vulnerable Code - Template Injection
+* Open Terminal
+* Command: `/home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `mousepad app/app.py`
+* Mousepad opens up
+	* goto line 101 and look for the vulnerable Template Call
+
+
 ## Insecure Direct Object Reference - Mass Assignment
 ## Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
@@ -219,6 +235,13 @@ And click "Send" in the request editor
 If everything has gone well, you can refresh the expense page in Chrome and you should see that the expense that you tampered with, has been approved
 
 ![Approved Expense](expense_app.png)
+
+### Vulnerable Code - Insecure Direct Object Reference
+* Open Terminal
+* Command: `/home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `mousepad controllers/expense.controller.js`
+* Mousepad opens up
+	* goto line 149 and look for the Mass Assignment Vulnerability
 
 ## OWASP Dependency Check
 * Open Terminal: Command: `cd /home/we45/Downloads/dependency-check/bin`
@@ -286,9 +309,13 @@ function update(jsn)
 * Here, upload a file from your `Downloads` directory called `test_expense.yml`
 * Observe the results
 
-## XML External Entities
-* Upload safe demo from `Samples` directory
-* Upload unsafe demo `Pass.docx` from `Samples` Directory
+### Vulnerable Code - Insecure Deserialization
+* Open Terminal
+* Command: `/home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `mousepad app/app.py`
+* Mousepad opens up
+	* goto line 316 and look for the Insecure Deserialization Vulnerability
+
 
 ## Lynis - Audit System Security Settings
 - Open the **Terminal** on your Desktop

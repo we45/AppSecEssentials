@@ -48,8 +48,7 @@
 ### Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
 	* Open up the Terminal
-	* Command: `cd /home/we45/Desktop/`
-	* Command: `./start_node.sh`
+	* Command: `start_node.sh`
 	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. We will be using the Web Service (3000) for this exercise
 	* Open the application `Insomnia` on your Desktop. This allows you to interact with the Web Service. Its an HTTP Client
 
@@ -104,8 +103,8 @@ Now that we have established that SQL Injection is possible, let's start explori
 ## Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
 	* Open up the Terminal
-	* Command: `cd /home/we45/Desktop/`
-	* Command: `./start_node.sh`
+	* If you have already started Node, then you dont need to do the next step
+	* Command: `start_node.sh`
 	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. We will be using the Web Service (3000) for this exercise
 	* Open the application `Insomnia` on your Desktop. This allows you to interact with the Web Service. Its an HTTP Client
 
@@ -193,11 +192,11 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 
 
 ## Insecure Direct Object Reference - Mass Assignment
-## Pre-Processing
+### Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
 	* Open up the Terminal
 	* Command: `cd /home/we45/Desktop/`
-	* Command: `./start_node.sh`
+	* Command: `start_node.sh`
 	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. 
 * Open the application `OWASP` on your Desktop.
 * Open Chrome from your Desktop
@@ -254,6 +253,11 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 * On the address bar, there's a RetireJS icon, next to FoxyProxy. Click on it to see vulnerabilities with JavaScript loaded in the DOM
 
 ## Insecure Direct Object Reference - AJAX
+### Pre-Processing
+* Open up terminal and run: `start_wecare.sh`
+* Wait for a few seconds and open Chrome
+
+### Lab
 * Navigate to the we care vulnerable web application by browsing the URL http://localhost from a web browser. The web browser shortcut could be found on the desktop.
 * Login to the application as Bruce Banner with the following credentials:
 * Email: betty.ross@we45.com
@@ -333,8 +337,36 @@ function update(jsn)
 * now go to `http://localhost:9000/encrypt_modes/`
 * enter some text and observe results
 
-## Encoding 
+## Output Encoding/Escaping 
 * Open up terminal and run: `start_wecare.sh`
 * Wait for a few seconds and open Chrome
 * now go to `http://localhost:9000/secure/encoding/`
 * Click on Escaped and Unescaped Buttons
+
+
+## Active Scanning with OWASP ZAP
+### Pre-Processing
+* Start the NodeJS Stack by running the following commands: 
+	* Open up the Terminal
+	* Command: `cd /home/we45/Desktop/`
+	* Command: `start_node.sh`
+	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. 
+* Open the application `OWASP` on your Desktop.
+* Open Chrome from your Desktop
+* Go to the FoxyProxy icon as you can see from here
+
+![FoxyProxy](foxyproxy.jpg)
+
+* In **Select Mode**, choose OWASP ZAP and Close. This turns the icon Blue
+* In the Chrome address bar, type "http://localhost:5000"
+* Now, if you go back to the OWASP ZAP Window, it would have started capturing requests and responses from Localhost. 
+ 
+
+### Exercise
+* The objective of this attack is to get an expense approved, even without it being approved by a manager
+* Let's Update an expense. 
+* Login with Maya's email and password: `maya.williams@widget.co` and password: `superman123`. 
+* In the top bar, you should find "Manage Expenses". Click on that. 
+* You can add and update or only Update an existing expense, all the while the traffic is captured by OWASP ZAP
+* Once this is done, go to OWASP ZAP and right click on the host in the side bar
+* Select Attack >> Active Scan and select Apply on the Dialog that appears and observe the results

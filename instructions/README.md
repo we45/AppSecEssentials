@@ -159,7 +159,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 ## Nmap Basic Commands
 - Open the **Terminal** on your Desktop
 - Run the command `stop_all_containers.sh`
-- Now run the command `start_nowasp.sh`, which will start a new container
+- Now run the command `start_node.sh`, which will start a new container
 - Type the following command in the terminal and press ENTER to perform a default TCP scan on the localhost with IP 127.0.0.1 `nmap -sT 127.0.0.1`
 - Type the following command in the terminal and press ENTER to perform a default UDP scan on the localhost IP with 127.0.0.1 `nmap -sU 127.0.0.1`
 - Type the following command in the terminal and press ENTER to perform a TCP scan on a specific set of TCP Ports (1 - 65535)  on the localhost with IP 127.0.0.1 `nmap -sT -p1-65535 127.0.0.1`
@@ -169,7 +169,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 - Type the following command in the terminal and press ENTER to perform a slow TCP scan, with traceroute on the localhost with IP 127.0.0.1 `nmap -sT 127.0.0.1 -Pn -T0 --traceroute`
 
 ## Nmap NSE Script - Scans
-* Type the following command in the terminal and press ENTER to perform a discovery scan on the localhost with IP 127.0.0.1 `nmap --script discovery 127.0.0.1 -Pn`
+* Type the following command in the terminal and press ENTER to perform a discovery scan on the localhost with IP 127.0.0.1 `nmap -sC -p1-65535 127.0.0.1`
 * Type the following command in the terminal and press ENTER to perform a vulnerability scan on the localhost with IP 127.0.0.1 `nmap --script vuln 127.0.0.1 -Pn`
 
 ## Server-Side Template Injection

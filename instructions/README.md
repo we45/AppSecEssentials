@@ -247,7 +247,7 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 * Run Command: `./dependency-check.sh --project Hacmebooks --out . --scan /home/we45/Downloads/HacmeBooks/`
 * Open the generated HTML report
 
-##RetireJS
+## RetireJS
 * Open Terminal: Command: `start_nowasp.sh`
 * Open Chrome and goto `http://localhost`
 * On the address bar, there's a RetireJS icon, next to FoxyProxy. Click on it to see vulnerabilities with JavaScript loaded in the DOM
@@ -320,7 +320,6 @@ function update(jsn)
 * Mousepad opens up
 	* goto line 316 and look for the Insecure Deserialization Vulnerability
 
-
 ## Lynis - Audit System Security Settings
 - Open the **Terminal** on your Desktop
 - Run command `lynis audit system`
@@ -343,6 +342,19 @@ function update(jsn)
 * now go to `http://localhost:9000/secure/encoding/`
 * Click on Escaped and Unescaped Buttons
 
+##Session Fixation
+* Start wecare stack by running: `start_wecare.sh`
+* Run Chrome and navigate to the login page `http://localhost:9000/login/`
+* Login to the application as `bruce.banner@we45.com` with password `secdevops`
+* In Chrome, click on the sidebar with the three dots: 
+	* More Tools > Developer Tools > Application > Cookies
+	* Copy the session ID into a file
+* Log out of the application 
+* In Chrome, click on the sidebar with the three dots: 
+	* More Tools > Developer Tools > Application > Cookies
+	* Paste the copied Cookie value 
+* Force browse to `http://localhost:9000/dashboard/`
+
 
 ## Active Scanning with OWASP ZAP
 ### Pre-Processing
@@ -360,13 +372,7 @@ function update(jsn)
 * In **Select Mode**, choose OWASP ZAP and Close. This turns the icon Blue
 * In the Chrome address bar, type "http://localhost:5000"
 * Now, if you go back to the OWASP ZAP Window, it would have started capturing requests and responses from Localhost. 
- 
 
 ### Exercise
-* The objective of this attack is to get an expense approved, even without it being approved by a manager
-* Let's Update an expense. 
-* Login with Maya's email and password: `maya.williams@widget.co` and password: `superman123`. 
-* In the top bar, you should find "Manage Expenses". Click on that. 
-* You can add and update or only Update an existing expense, all the while the traffic is captured by OWASP ZAP
 * Once this is done, go to OWASP ZAP and right click on the host in the side bar
 * Select Attack >> Active Scan and select Apply on the Dialog that appears and observe the results

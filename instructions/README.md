@@ -93,7 +93,7 @@ Now that we have established that SQL Injection is possible, let's start explori
 
 ### Vulnerable Code - SQL Injection
 * Open Terminal
-* Command: `/home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/project.controller.js`
 * Mousepad opens up
 	* goto line 125 and look at the vulnerable SQL call

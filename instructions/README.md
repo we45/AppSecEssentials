@@ -185,7 +185,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 
 ### Vulnerable Code - Template Injection
 * Open Terminal
-* Command: `/home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `cd /home/we45/Downloads/sources/Vulnerable-Flask-App`
 * Command: `mousepad app/app.py`
 * Mousepad opens up
 	* goto line 101 and look for the vulnerable Template Call

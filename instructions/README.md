@@ -263,7 +263,7 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 * Email: betty.ross@we45.com
 * Password: secdevops
 * Traverse to the following URL
-* `http://localhost/record/add/`
+* `http://localhost:9000/record/add/`
 * Open the Web Console by hitting Ctrl+Shift+K
 * Firefox doesn't allow pasting to the console by default. So you need to type `allow pasting` without pressing a Return/Enter at the end
 * Copy the following code and paste it in the web console

@@ -237,7 +237,7 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 
 ### Vulnerable Code - Insecure Direct Object Reference
 * Open Terminal
-* Command: `/home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/expense.controller.js`
 * Mousepad opens up
 	* goto line 149 and look for the Mass Assignment Vulnerability

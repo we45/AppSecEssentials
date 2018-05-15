@@ -255,7 +255,7 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 ## Insecure Direct Object Reference - AJAX
 ### Pre-Processing
 * Open up terminal and run: `start_wecare.sh`
-* Wait for a few seconds and open Chrome
+* Wait for a few seconds and open Firefox
 
 ### Lab
 * Navigate to the we care vulnerable web application by browsing the URL http://localhost from a web browser. The web browser shortcut could be found on the desktop.

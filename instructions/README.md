@@ -315,7 +315,7 @@ function update(jsn)
 
 ### Vulnerable Code - Insecure Deserialization
 * Open Terminal
-* Command: `/home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `cd /home/we45/Downloads/sources/Vulnerable-Flask-App`
 * Command: `mousepad app/app.py`
 * Mousepad opens up
 	* goto line 316 and look for the Insecure Deserialization Vulnerability

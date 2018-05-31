@@ -263,7 +263,7 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 * Email: betty.ross@we45.com
 * Password: secdevops
 * Traverse to the following URL
-* `http://localhost:9000/record/add/`
+* `http://localhost/record/add/`
 * Open the Web Console by hitting Ctrl+Shift+K
 * Firefox doesn't allow pasting to the console by default. So you need to type `allow pasting` without pressing a Return/Enter at the end
 * Copy the following code and paste it in the web console
@@ -333,18 +333,18 @@ function update(jsn)
 ## Modes of Encryption
 * Open up terminal and run: `start_wecare.sh`
 * Wait for a few seconds and open Chrome
-* now go to `http://localhost:9000/encrypt_modes/`
+* now go to `http://localhost/encrypt_modes/`
 * enter some text and observe results
 
 ## Output Encoding/Escaping 
 * Open up terminal and run: `start_wecare.sh`
 * Wait for a few seconds and open Firefox
-* now go to `http://localhost:9000/secure/encoding/`
+* now go to `http://localhost/secure/encoding/`
 * Click on Escaped and Unescaped Buttons
 
 ##Session Fixation
 * Start wecare stack by running: `start_wecare.sh`
-* Run Chrome and navigate to the login page `http://localhost:9000/login/`
+* Run Chrome and navigate to the login page `http://localhost/login/`
 * Login to the application as `bruce.banner@we45.com` with password `secdevops`
 * In Chrome, click on the sidebar with the three dots: 
 	* More Tools > Developer Tools > Application > Cookies
@@ -353,7 +353,7 @@ function update(jsn)
 * In Chrome, click on the sidebar with the three dots: 
 	* More Tools > Developer Tools > Application > Cookies
 	* Paste the copied Cookie value 
-* Force browse to `http://localhost:9000/dashboard/`
+* Force browse to `http://localhost/dashboard/`
 
 
 ## Active Scanning with OWASP ZAP

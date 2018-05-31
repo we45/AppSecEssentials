@@ -93,7 +93,7 @@ Now that we have established that SQL Injection is possible, let's start explori
 
 ### Vulnerable Code - SQL Injection
 * Open Terminal
-* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/project.controller.js`
 * Mousepad opens up
 	* goto line 125 and look at the vulnerable SQL call
@@ -185,7 +185,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 
 ### Vulnerable Code - Template Injection
 * Open Terminal
-* Command: `cd /home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `cd /home/we45/Desktop/sources/Vulnerable-Flask-App`
 * Command: `mousepad app/app.py`
 * Mousepad opens up
 	* goto line 101 and look for the vulnerable Template Call
@@ -237,13 +237,13 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 
 ### Vulnerable Code - Insecure Direct Object Reference
 * Open Terminal
-* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/expense.controller.js`
 * Mousepad opens up
 	* goto line 149 and look for the Mass Assignment Vulnerability
 
 ## OWASP Dependency Check
-* Open Terminal: Command: `cd /home/we45/Downloads/dependency-check/bin`
+* Open Terminal: Command: `cd /home/we45/Desktop/dependency-check/bin`
 * Run Command: `./dependency-check.sh --project Hacmebooks --out . --scan /home/we45/Downloads/HacmeBooks/`
 * Open the generated HTML report
 

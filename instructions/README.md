@@ -315,7 +315,7 @@ function update(jsn)
 
 ### Vulnerable Code - Insecure Deserialization
 * Open Terminal
-* Command: `cd /home/we45/Downloads/sources/Vulnerable-Flask-App`
+* Command: `cd /home/we45/Desktop/sources/Vulnerable-Flask-App`
 * Command: `mousepad app/app.py`
 * Mousepad opens up
 	* goto line 316 and look for the Insecure Deserialization Vulnerability
@@ -326,7 +326,7 @@ function update(jsn)
 - Observe the results
 
 ## Insecure Cryptographic Storage
-* Open up terminal and command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS/controllers`
+* Open up terminal and command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS/controllers`
 * Command: `mousepad user.controllers.js`
 * Check out the function `createCard()` => Line 56
 

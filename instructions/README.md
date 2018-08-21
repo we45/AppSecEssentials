@@ -93,7 +93,7 @@ Now that we have established that SQL Injection is possible, let's start explori
 
 ### Vulnerable Code - SQL Injection
 * Open Terminal
-* Command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/project.controller.js`
 * Mousepad opens up
 	* goto line 125 and look at the vulnerable SQL call
@@ -195,7 +195,7 @@ Now repeat the steps from the Firefox Browser and observe the results. Once the 
 ### Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
 	* Open up the Terminal
-	* Command: `cd /home/we45/Desktop/`
+	* Command: `cd /home/we45/Downloads/`
 	* Command: `start_node.sh`
 	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. 
 * Open the application `OWASP` on your Desktop.
@@ -237,14 +237,14 @@ If everything has gone well, you can refresh the expense page in Chrome and you 
 
 ### Vulnerable Code - Insecure Direct Object Reference
 * Open Terminal
-* Command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS`
+* Command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS`
 * Command: `mousepad controllers/expense.controller.js`
 * Mousepad opens up
 	* goto line 149 and look for the Mass Assignment Vulnerability
 
 ## OWASP Dependency Check
-* Open Terminal: Command: `cd /home/we45/Desktop/dependency-check/bin`
-* Run Command: `./dependency-check.sh --project Hacmebooks --out . --scan /home/we45/Downloads/HacmeBooks/`
+* Open Terminal: Command: `cd /home/we45/Downloads/dependency-check/bin`
+* Run Command: `./dependency-check.sh -n --project Hacmebooks --out . --scan /home/we45/Downloads/HacmeBooks/`
 * Open the generated HTML report
 
 ## RetireJS
@@ -315,7 +315,7 @@ function update(jsn)
 
 ### Vulnerable Code - Insecure Deserialization
 * Open Terminal
-* Command: `cd /home/we45/Desktop/sources/Vulnerable-Flask-App`
+* Command: `cd /home/we45/Downloads/sources/Vulnerable-Flask-App`
 * Command: `mousepad app/app.py`
 * Mousepad opens up
 	* goto line 316 and look for the Insecure Deserialization Vulnerability
@@ -326,7 +326,7 @@ function update(jsn)
 - Observe the results
 
 ## Insecure Cryptographic Storage
-* Open up terminal and command: `cd /home/we45/Desktop/sources/Cut-The-Funds-NodeJS/controllers`
+* Open up terminal and command: `cd /home/we45/Downloads/sources/Cut-The-Funds-NodeJS/controllers`
 * Command: `mousepad user.controllers.js`
 * Check out the function `createCard()` => Line 56
 
@@ -360,7 +360,7 @@ function update(jsn)
 ### Pre-Processing
 * Start the NodeJS Stack by running the following commands: 
 	* Open up the Terminal
-	* Command: `cd /home/we45/Desktop/`
+	* Command: `cd /home/we45/Downloads/`
 	* Command: `start_node.sh`
 	* It will run a full stack deployment of a Front-end service, a Web Service and a Datbase. The Front-end service runs on port 5000, the Backend Web Service runs on port 3000. 
 * Open the application `OWASP` on your Desktop.

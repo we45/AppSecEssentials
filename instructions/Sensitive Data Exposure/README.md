@@ -12,5 +12,5 @@
 ## Modes of Encryption
 * Open up terminal and run: `start_wecare.sh`
 * Wait for a few seconds and open Chrome
-* now go to `http://localhost/encrypt_modes/`
+* now go to `http://localhost:9000/encrypt_modes/`
 * enter some text and observe results

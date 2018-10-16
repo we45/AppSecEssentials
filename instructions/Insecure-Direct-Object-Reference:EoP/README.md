@@ -4,12 +4,12 @@
 * Wait for a few seconds and open Firefox
 
 ### Lab
-* Navigate to the we care vulnerable web application by browsing the URL http://localhost from a web browser. The web browser shortcut could be found on the desktop.
-* Login to the application as Bruce Banner with the following credentials:
+* Navigate to the we care vulnerable web application by browsing the URL `http://localhost:9000` from a web browser. The web browser shortcut could be found on the desktop.
+* Login to the application as Betty Ross with the following credentials:
 * Email: betty.ross@we45.com
 * Password: secdevops
 * Traverse to the following URL
-* `http://localhost/record/add/`
+* `http://localhost:9000/record/add/`
 * Open the Web Console by hitting Ctrl+Shift+K
 * Firefox doesn't allow pasting to the console by default. So you need to type `allow pasting` without pressing a Return/Enter at the end
 * Copy the following code and paste it in the web console
@@ -22,8 +22,8 @@ function update(jsn)
       url: '/update/record/',
       data: {
        rid: jsn,
-       remarks : 'Diabetes',
-       csrfmiddlewaretoken: '',
+       remarks : 'Injected by Betty ;)',
+       csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value,
            },
      success: function(data) {
            alert(data);
@@ -37,9 +37,6 @@ function update(jsn)
  }
 
 ```
-* Right click on the web browser and select View Page Source
-* Copy the `csrfmiddlewaretoken` from the page source. (hit `ctrl+f` and enter `csrfmiddlewaretoken` as the search parameter. Copy the value)
-* Paste the `csrfmiddlewaretoken` value within the single quotes in the 9th line of the payload given above
 * Type `update(3);`
 * Run the command by hitting Enter/return
 * Upon running the payload web browser displays an alert Successfully updated test's Health Record
@@ -49,7 +46,7 @@ function update(jsn)
 * email: **steve.jobs@we45.com**
 * password: **secdevops**
 * Click on Health Record from the navigation panel on the left hand side
-* Now click on Health Records from the drop down list and observe the remarks column. The remarks would be the string "injected by betty".
+* Now click on Health Records from the drop down list and observe the remarks column. The remarks would be the string "Injected by Betty ;)".
 
 ### Stop App
 * Run `stop_all_containers.sh`

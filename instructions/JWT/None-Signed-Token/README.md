@@ -22,7 +22,7 @@
 
 ##### Step 4:
 
-* Click `Shift + f9` or right click on top of the browser and click on `Web Developer`,  select the `Storage Inspect` tab.
+* Right click on top of the browser and click on `Web Developer`, select the `Storage Inspect` tab.
 
 ![](img/local-storage.png)
 
